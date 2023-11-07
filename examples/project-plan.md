@@ -15,8 +15,10 @@ Traffic is an important problem in our daily life due to some various factor for
 
 
 
-### Datasource1: ExampleSource
+### Datasource1: 
 * Traffic Prediction Dataset: https://www.kaggle.com/datasets/hasibullahaman/traffic-prediction-dataset?select=Traffic.csv
+* Data Type: CSV
+### Datasource2:
 * Weather Dataset: https://www.kaggle.com/datasets/muthuj7/weather-dataset?select=weatherHistory.csv
 * Data Type: CSV
 
