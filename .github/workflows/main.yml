@@ -14,7 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set execute permissions for test.sh
+      - name: Set execute permissions for test.py
         run: chmod +x project/test.py  # Ensure test.sh is executable within your repository structure
 
       - name: Run tests
