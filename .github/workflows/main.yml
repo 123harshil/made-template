@@ -1,0 +1,26 @@
+name: Project 
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  project:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        path: main
+
+    # Install python
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+
+    # Run exercise feedback
+    - name: project
+      run: |
+        .project/test.sh
