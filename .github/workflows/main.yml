@@ -16,5 +16,5 @@ jobs:
 
       - name: Run tests
         run: |
-          chmod +x test.sh  # Ensure test.sh is executable
-          https://github.com/123harshil/made-template/blob/main/project/test.sh
+          chmod +x https://github.com/123harshil/made-template/blob/main/project/test.sh  # Ensure test.sh is executable
+          ./test.sh
