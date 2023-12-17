@@ -23,4 +23,4 @@ jobs:
     # Run exercise feedback
     - name: project
       run: |
-        .project/test.sh
+        .123harshil/made-template/tree/main/project
