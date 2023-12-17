@@ -14,7 +14,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set execute permissions for test.sh
+        run: chmod +x project/test.sh  # Ensure test.sh is executable within your repository structure
+
       - name: Run tests
-        run: |
-          chmod +x https://github.com/123harshil/made-template/blob/main/project/test.sh  # Ensure test.sh is executable
-          ./test.sh
+        run: ./project/test.sh
