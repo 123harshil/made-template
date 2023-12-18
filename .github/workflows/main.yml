@@ -35,4 +35,4 @@ jobs:
     # Run Project feedback
     - name: Project feedback
       run: |
-        .tree/main/project
+        .blob/main/project/test.sh
