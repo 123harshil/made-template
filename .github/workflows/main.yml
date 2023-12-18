@@ -23,6 +23,6 @@ jobs:
           pip install pytest  # Replace with your requirements file
 
       - name: Run tests
-        run: /project/tests.sh  # Update with the appropriate command to execute tests
+        run: .123harshil/made-template/blob/main/project/test.sh  # Update with the appropriate command to execute tests
 
       # Add more steps for deployment, data pipeline execution, etc., if needed
