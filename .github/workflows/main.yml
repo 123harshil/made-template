@@ -5,10 +5,10 @@ on:
     branches:
     - main
     paths:
-    - exercises/**
+    - project/**
 
 jobs:
-  exercise-feedback:
+  Project-feedback:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -16,7 +16,7 @@ jobs:
       with:
         path: main
 
-    - name: Checkout exercise feedback
+    - name: Checkout Project feedback
       uses: actions/checkout@v3
       with:
         repository: 123harshil/made-template
