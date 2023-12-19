@@ -3,7 +3,7 @@
 # Execute your data pipeline
 # Replace this with the command or script that runs your data pipeline
 # For example:
-python trafficprediction.py
+python ./123harshil/made-template/blob/main/project/trafficprediction.py
 
 # Check if the database files exist
 db_file_1="D:\project2\Traffic.db"
