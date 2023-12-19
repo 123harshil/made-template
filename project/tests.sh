@@ -1,15 +1,17 @@
 #!/bin/bash
 
-# Execute your data pipeline
-# Replace this with the command or script that runs your data pipeline
-# For example:
-python trafficprediction.py
-
-# Check if the database files exist
-db_file_1="D:\project2\Traffic.db"
-db_file_2="D:\project2\weather.db"
-
-if [ -f "$db_file_1" ] && [ -f "$db_file_2" ]; then
-  echo "Databases created successfully!"
+# Check if traffic.db exists
+if [ -f "data/traffic.db" ]; then
+  echo "traffic.db exists"
 else
-  echo "databases not created."
+  echo "traffic.db does not exist"
+  exit 1  # Exit with non-zero code to indicate test failure
+fi
+
+# Check if weather.db exists
+if [ -f "data/weather.db" ]; then
+  echo "weather.db exists"
+else
+  echo "weather.db does not exist"
+  exit 1  # Exit with non-zero code to indicate test failure
+fi
