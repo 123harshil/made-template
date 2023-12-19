@@ -1,3 +1,5 @@
 numpy
 pandas
+os
+kaggle
 requests==2.26.0
