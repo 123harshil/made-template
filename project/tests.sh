@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Execute your data pipeline (pipeline.sh)
-/project/pipeline.sh
+python /project/pipeline.sh
 
 # Validate the existence of output files
 if [ -f "/data/Traffic.db" ] && [ -f "/data/weather.db" ]; then
