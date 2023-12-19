@@ -1,15 +1,21 @@
-
 import os
 
-def test_db_files_created():
+def check_database_files():
+    data_directory = 'data'  # Replace with the path to your data directory
+    
+    # Check if traffic.db exists
+    traffic_db_path = os.path.join(data_directory, 'traffic.db')
+    if os.path.exists(traffic_db_path):
+        print("traffic.db exists")
+    else:
+        print("traffic.db does not exist")
 
-    db_file_1 = r"D:\project2\Traffic.db"
-    db_file_2 = r"D:\project2\weather.db"
+    # Check if weather.db exists
+    weather_db_path = os.path.join(data_directory, 'weather.db')
+    if os.path.exists(weather_db_path):
+        print("weather.db exists")
+    else:
+        print("weather.db does not exist")
 
-    if not os.path.exists(db_file_1):
-        print(f"Error: {db_file_1} does not exist.")
-    if not os.path.exists(db_file_2):
-        print(f"Error: {db_file_2} does not exist.")
-
-if __name__ == '__main__':
-    test_db_files_created()
+# Execute the function to check the database files
+check_database_files()
