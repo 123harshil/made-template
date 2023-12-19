@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if traffic.db exists
-if [ -f "data/traffic.db" ]; then
+if [ -f "data/Traffic.db" ]; then
   echo "traffic.db exists"
 else
   echo "traffic.db does not exist"
