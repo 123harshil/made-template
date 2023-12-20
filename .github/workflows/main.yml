@@ -1,38 +1,35 @@
-name: Automated_Testing_CI
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: Project work 4 & 5 Pipeline
 
-on:   
+on:
   push:
     branches:
-    - main
-
-env:
-  KAGGLE_USERNAME: $KAGGLE_USERNAME
-  KAGGLE_KEY: $KAGGLE_KEY
+      - main
 
 jobs:
-  Automated_Testing_CI:
+  run_pipeline:
     runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
 
-    - name: Set up Node
-      uses: actions/setup-node@v3
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
       with:
-        node-version: 'lts/*'
-      
-    # Install Python 3.11
-    - name: Set up Python 3.11
-      uses: actions/setup-python@v3
-      with:
-        python-version: 3.11
-        
-    # Install dependencies
-    - name: Install dependencies
+        python-version: 3.x
+
+    - name: Install Dependencies
       run: |
+        pip install -r ./requirements.txt  
         python -m pip install --upgrade pip
-        pip install pandas requests sqlalchemy
+        pip install kaggle
+
+    - name: Setup Kaggle
+      run: |
+        mkdir $HOME/.kaggle
+        echo '{"username":"${{ secrets.KAGGLE_USERNAME }}","key":"${{ secrets.KAGGLE_KEY }}"}' > $HOME/.kaggle/kaggle.json
+        chmod 600 $HOME/.kaggle/kaggle.json
+
         
     # Run tests 
     - name: Run Python Script
