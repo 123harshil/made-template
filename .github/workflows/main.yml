@@ -32,5 +32,5 @@ jobs:
 
     - name: Run Pipeline
       run: |
-        chmod u+r+x ./project/tests.sh
+        chmod +x ./project/tests.sh
         ./project/tests.sh
