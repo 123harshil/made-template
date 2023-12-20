@@ -1,6 +1,6 @@
 kaggle
 pandas
-sqlite3
+sqlite
 numpy
 sqlalchemy
 pytest
