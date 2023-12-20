@@ -1,12 +1,11 @@
 name: Project work 4 & 5 Pipeline
 
 on:
-    push:
-        branches:
-         - main
-        paths:
-            - data/**
-            - project/**
+  push:
+    branches:
+    - main
+    paths:
+    - project/**
 
 
 jobs:
