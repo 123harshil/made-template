@@ -1,4 +1,4 @@
-name: Project Test
+name: Project work 4 & 5 Pipeline
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        pip install -r ./requirements.txt
+        pip install -r ./requirements.txt  
         python -m pip install --upgrade pip
         pip install kaggle
 
@@ -32,6 +32,5 @@ jobs:
 
     - name: Run Pipeline
       run: |
-        cd project
-        chmod u+r+x tests.sh
-        ./tests.sh
+        chmod u+r+x ./project/tests.sh
+        ./project/tests.sh
