@@ -21,4 +21,4 @@ jobs:
       - name: Run tests
         run: |
           cd project  # Move to the project directory
-          sh test.sh  # Execute the shell script
+          sh tests.sh  # Execute the shell script
