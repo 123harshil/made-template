@@ -26,8 +26,7 @@ jobs:
       - name: Set Kaggle configuration
         run: |
           mkdir ~/.kaggle
-          echo "$KAGGLE_USERNAME" > ~/.kaggle/kaggle.json
-          echo "$KAGGLE_KEY" >> ~/.kaggle/kaggle.json
+          echo '{"username":"hrshilptel","key":"36a6615fe6a329ab4d5467e72c610511"}' > ~/.kaggle/kaggle.json
           chmod 600 ~/.kaggle/kaggle.json
 
       - name: Run tests
