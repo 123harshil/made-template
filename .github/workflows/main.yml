@@ -2,6 +2,8 @@ name: Project work 4 & 5 Pipeline
 
 on:
     push:
+        branches:
+         - main
         paths:
             - data/**
             - project/**
