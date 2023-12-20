@@ -1,3 +1,3 @@
 
 
-python3 /project/test_pipeline.py
+python3 test_pipeline.py
