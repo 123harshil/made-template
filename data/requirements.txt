@@ -1,5 +1,0 @@
-kaggle
-pandas
-numpy
-sqlalchemy
-pytest
