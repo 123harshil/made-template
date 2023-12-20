@@ -22,6 +22,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r ./data/requirements.txt  
+          
+      - name: Set Kaggle configuration
+        run: |
+          mkdir ~/.kaggle
+          echo "$KAGGLE_USERNAME" > ~/.kaggle/kaggle.json
+          echo "$KAGGLE_KEY" >> ~/.kaggle/kaggle.json
+          chmod 600 ~/.kaggle/kaggle.json
 
       - name: Run tests
         run: |
