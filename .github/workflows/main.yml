@@ -32,6 +32,5 @@ jobs:
 
     - name: Run Pipeline
       run: |
-        chmod +x ./project/tests.sh
-        cd project  # Change to the project directory
-        ./tests.sh
+        chmod +x ./project/tests.sh  
+        ./project/tests.sh
