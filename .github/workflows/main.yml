@@ -2,9 +2,6 @@ name: CI Project Test
 
 on:
   push:
-    paths:
-      - 'data/**'
-      - 'project/**'
     branches:
       - main
 
