@@ -1,9 +1,11 @@
 name: Project work 4 & 5 Pipeline
 
 on:
-  push:
-    branches:
-      - main
+    push:
+        paths:
+            - data/**
+            - project/**
+
 
 jobs:
   run_pipeline:
@@ -32,5 +34,6 @@ jobs:
 
     - name: Run Pipeline
       run: |
-        chmod +x .github/123harshil/made-template/blob/main/project/tests.sh
-        .github/123harshil/made-template/blob/main/project/tests.sh
+        cd project 
+        chmod +x ./tests.sh
+        ./tests.sh
