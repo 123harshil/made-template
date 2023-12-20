@@ -1,6 +1,5 @@
 kaggle
 pandas
-sqlite
 numpy
 sqlalchemy
 pytest
