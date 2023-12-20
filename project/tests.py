@@ -11,12 +11,12 @@ class TestData(unittest.TestCase):
         logging.info("setting up the data")
         try:
             # Set up SQLite databases
-            self.traffic_db_path = '../made/traffic.sqlite'
+            self.traffic_db_path = "D:\\made\\traffic.sqlite"
             self.conn1 = sqlite3.connect(self.traffic_db_path)
             self.query1 = f"SELECT * FROM traffic;"
             self.df1 = pd.read_sql_query(self.query1, self.conn1)
 
-            self.weather_db_path = '../made/weather.sqlite'
+            self.weather_db_path = "D:\\made\\weather.sqlite"
             self.conn2 = sqlite3.connect(self.weather_db_path)
             self.query2 = f"SELECT * FROM weather;"
             self.df2 = pd.read_sql_query(self.query2, self.conn2)
