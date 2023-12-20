@@ -1,5 +1,6 @@
-kaggle
 pandas
 numpy
-sqlalchemy
 pytest
+pytest-dependency
+openpyxl
+kaggle
