@@ -5,15 +5,15 @@ import logging
 
 # dataset links
 dataset_links = [
-  "https://www.kaggle.com/datasets/hasibullahaman/traffic-prediction-dataset", # elon must tweets
-  "https://www.kaggle.com/datasets/muthuj7/weather-dataset" # tesla stocks
+  "https://www.kaggle.com/datasets/hasibullahaman/traffic-prediction-dataset", # traffic prediction dataset
+  "https://www.kaggle.com/datasets/muthuj7/weather-dataset" # weather dataset
 ]
 
 # have to provide kaggle json file to download the .csv files
 od.download(dataset_links[0])
 
 
-# storing the elon must tweets into a sqlite database
+# storing the traffic prediction data into a sqlite database
 traffic_data = './traffic-prediction-dataset/Traffic.csv'
 df1 = pd.read_csv(traffic_data)
 traffic_db_path = "D:\\made\\traffic.sqlite"
@@ -23,7 +23,7 @@ df1.to_sql('traffic', conn, index=False, if_exists='replace')
 
 od.download(dataset_links[1])
 
-# storing the tesla tweets into a sqlite dataase
+# storing the weather data into a sqlite dataase
 weather_data = 'weather-dataset/weatherHistory.csv'
 df2 = pd.read_csv(weather_data)
 conn = sqlite3.connect("D:\\made\\weather.sqlite")
