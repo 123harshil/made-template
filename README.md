@@ -19,7 +19,7 @@ This project encompasses the utilization of two open datasets from Kaggle. Our p
 We emphasize that each phase of this project was undertaken individually, ensuring dedicated attention to detail and comprehensive exploration of the dataset. Our work focused on maintaining a high standard of accuracy, adhering to best practices in data analysis, and striving for a cohesive and structured project execution.
      
 
-### Exporting a Jupyter Notebook
+### Jupyter Notebook
 [Report.ipynb](https://github.com/123harshil/made-template/blob/main/project/report.ipynb)
 
 
