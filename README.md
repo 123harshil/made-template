@@ -1,8 +1,8 @@
-##Traffic Prediction based on Weather Conditions
+###Traffic Prediction based on Weather Conditions
 
 This project encompasses the utilization of two open datasets from Kaggle. Our primary objectives involve data acquisition, data cleansing, and subsequent storage of the cleaned data in .sqlite format using a structured data pipeline. Throughout this process, we've conducted in-depth analysis and exploratory data analysis (EDA). Prior to commencing, ensure Python is installed as we'll be working within Jupyter Notebooks.
 
-##Project Overview
+###Project Overview
 
 Data Pipeline Creation: Initially, our focus was on building a robust data pipeline that facilitated the extraction of Kaggle data, enabling its transformation and storage in the .sqlite format.
 
