@@ -1,20 +1,20 @@
-###Traffic Prediction based on Weather Conditions
+### Traffic Prediction based on Weather Conditions
 
 This project encompasses the utilization of two open datasets from Kaggle. Our primary objectives involve data acquisition, data cleansing, and subsequent storage of the cleaned data in .sqlite format using a structured data pipeline. Throughout this process, we've conducted in-depth analysis and exploratory data analysis (EDA). Prior to commencing, ensure Python is installed as we'll be working within Jupyter Notebooks.
 
-###Project Overview
+### Project Overview
 
-Data Pipeline Creation: Initially, our focus was on building a robust data pipeline that facilitated the extraction of Kaggle data, enabling its transformation and storage in the .sqlite format.
+1. Data Pipeline Creation: Initially, our focus was on building a robust data pipeline that facilitated the extraction of Kaggle data, enabling its transformation and storage in the .sqlite format.
 
-Test File Creation: To ensure the efficacy of our data pipeline, we developed a test file for verifying the successful creation and storage of data within the .sqlite directory.
+2. Test File Creation: To ensure the efficacy of our data pipeline, we developed a test file for verifying the successful creation and storage of data within the .sqlite directory.
 
-Final Report: Our final report encompasses several crucial steps:
+3. Final Report: Our final report encompasses several crucial steps:
 
-Data Cleaning: We meticulously examined the datasets for any occurrences of missing or empty values (NaN), promptly addressing and removing them to ensure data integrity. Additionally, we identified and rectified any data type inconsistencies within our dataset.
+	- Data Cleaning: We meticulously examined the datasets for any occurrences of missing or empty values (NaN), promptly addressing and removing them to ensure data integrity. Additionally, we identified and rectified any data type inconsistencies within our dataset.
 
-Exploratory Data Analysis (EDA): After completing the data cleansing process, we delved into an extensive exploration of the dataset. This involved statistical analysis and descriptive insights to better comprehend the underlying patterns and trends.
+	- Exploratory Data Analysis (EDA): After completing the data cleansing process, we delved into an extensive exploration of the dataset. This involved statistical analysis and descriptive insights to better comprehend the underlying patterns and trends.
 
-Data Visualization: To gain comprehensive insights and facilitate a better understanding of the dataset, we employed various data visualization techniques. Visual representations such as plots, graphs, and charts were utilized to highlight significant trends, correlations, and anomalies within the data.
+	- Data Visualization: To gain comprehensive insights and facilitate a better understanding of the dataset, we employed various data visualization techniques. Visual representations such as plots, graphs, and charts were utilized to highlight significant trends, correlations, and anomalies within the data.
 
 We emphasize that each phase of this project was undertaken individually, ensuring dedicated attention to detail and comprehensive exploration of the dataset. Our work focused on maintaining a high standard of accuracy, adhering to best practices in data analysis, and striving for a cohesive and structured project execution.
      
