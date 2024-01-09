@@ -20,7 +20,8 @@ We emphasize that each phase of this project was undertaken individually, ensuri
      
 
 ### Exporting a Jupyter Notebook
-Jupyter Notebooks can be exported using `nbconvert` (`pip install nbconvert`). For example, to export the example notebook to html: `jupyter nbconvert --to html examples/final-report-example.ipynb --embed-images --output final-report.html`
+[Report.ipynb](https://github.com/123harshil/made-template/blob/main/project/report.ipynb)
+
 
 
 ## Exercises
